@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{font-family:'DM Sans',Inter,ui-sans-serif,system-ui,sans-serif;font-synthesis:none;text-rendering:optimizeLegibility}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0}
+.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.section-pad{padding-block:88px}
+.hero-bg{background:radial-gradient(circle at 80% 25%,rgba(242,139,50,.18),transparent 27%),linear-gradient(120deg,#10243a 0%,#152f49 62%,#0d1e30 100%)}
+.btn-primary,.btn-outline,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:11px;padding:13px 19px;font-size:14px;font-weight:800;transition:all .18s ease}
+.btn-primary{background:#f28b32;color:#10243a;box-shadow:0 8px 20px rgba(242,139,50,.18)}
+.btn-primary:hover{background:#ff9b46;transform:translateY(-1px)}
+.btn-outline{border:1px solid rgba(255,255,255,.4);color:white}
+.btn-outline:hover{background:rgba(255,255,255,.1)}
+.btn-secondary{border:1px solid #dbe2e8;color:#10243a;background:white}
+.btn-secondary:hover{background:#f8fafc}
+.service-card{display:flex;flex-direction:column;border:1px solid #e2e8f0;border-radius:20px;padding:26px;transition:transform .2s,box-shadow .2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,36,58,.09)}
+.shadow-card{box-shadow:0 20px 60px rgba(16,36,58,.08)}
+input:not([type=checkbox]),select{width:100%;border:1px solid #dbe2e8;border-radius:10px;padding:12px 13px;font:inherit;font-size:14px;color:#10243a;background:white;outline:none}
+input:focus,select:focus{border-color:#f28b32;box-shadow:0 0 0 3px rgba(242,139,50,.13)}
+@media(max-width:640px){.section-pad{padding-block:64px}.container{width:min(100% - 32px,1160px)}}
